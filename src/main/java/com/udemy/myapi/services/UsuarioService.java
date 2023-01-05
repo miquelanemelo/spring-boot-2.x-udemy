@@ -1,5 +1,6 @@
 package com.udemy.myapi.services;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,4 +22,18 @@ public class UsuarioService {
 				"Objeto não encontrato! ID:" + id + ", Tipo: " + Usuario.class.getName()));
 	}
 
+	public List<Usuario> findAll() {
+		return repository.findAll();
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
