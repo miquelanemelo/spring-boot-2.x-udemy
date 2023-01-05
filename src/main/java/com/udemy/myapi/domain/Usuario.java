@@ -19,16 +19,16 @@ public class Usuario implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	
-	@NotEmpty(message= "campo NOME é mandatório")
+
+	@NotEmpty(message = "campo NOME é mandatório")
 	@Length(min = 3, max = 100, message = "O nome deve ter entre 3 e 100 caracteres")
 	private String nome;
-	
-	@NotEmpty(message= "campo LOGIN é mandatório")
+
+	@NotEmpty(message = "campo LOGIN é mandatório")
 	@Length(min = 3, max = 100, message = "O login deve ter entre 3 e 100 caracteres")
 	private String login;
-	
-	@NotEmpty(message= "campo SENHA é mandatório")
+
+	@NotEmpty(message = "campo SENHA é mandatório")
 	@Length(min = 3, max = 100, message = "A senha deve ter entre 3 e 100 caracteres")
 	private String senha;
 
